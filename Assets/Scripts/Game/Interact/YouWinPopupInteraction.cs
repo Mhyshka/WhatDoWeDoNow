@@ -19,9 +19,8 @@ internal class YouWinPopupInteraction : Interactable
 			popup = UIManager.Instance.GetPanel("WinPopup") as Popup;
 			popup.SetCloseData (winText	);
 
-			if(!string.IsNullOrEmpty(winText) && !string.IsNullOrEmpty(cancelText))
+			if(!string.IsNullOrEmpty(cancelText))
 			{
-				popup.SetCloseData(winText);
 				popup.SetButtonText(cancelText);
 			}
 			
