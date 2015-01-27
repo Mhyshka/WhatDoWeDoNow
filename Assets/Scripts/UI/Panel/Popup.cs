@@ -55,11 +55,12 @@ internal class Popup : Panel
 		validButton.inputKey = a_validKey;
 	}
 
+
 	internal void SetCloseData(string a_content)
 	{
-		closeButton.gameObject.SetActive (false);
-		cancelButton.gameObject.SetActive (true);
-		validButton.gameObject.SetActive (true);
+		closeButton.gameObject.SetActive (true);
+		cancelButton.gameObject.SetActive (false);
+		validButton.gameObject.SetActive (false);
 		
 		contentLabel.text = a_content;
 	}

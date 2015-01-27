@@ -17,7 +17,7 @@ internal class PopupInfoInteraction : Interactable
 		if (string.IsNullOrEmpty (title))
 		{
 			popup = UIManager.Instance.GetPanel("LittlePopup") as Popup;
-			popup.SetCloseData (title);
+			popup.SetCloseData (description);
 		}
 		else
 		{
@@ -25,7 +25,7 @@ internal class PopupInfoInteraction : Interactable
 			popup.SetCloseData (title, description);
 		}
 
-		if(string.IsNullOrEmpty(closeText))
+		if(!string.IsNullOrEmpty(closeText))
 		{
 			popup.SetButtonText(closeText);
 		}
